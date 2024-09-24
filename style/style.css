@@ -6,24 +6,23 @@
   font-family: "Raleway", sans-serif;
 }
 /* shared css code  */
-body{
-    background-color: #eff6f8;
+body {
+  background-color: #eff6f8;
 }
 .container {
   max-width: 1280px;
   margin: 0px auto;
 }
-.container_fluid{
-    width: 100%;
-
+.container_fluid {
+  width: 100%;
 }
-h1,h2{
-    font-size: 3rem;
-    margin-top: 2rem;
+h1,
+h2 {
+  font-size: 3rem;
+  margin-top: 2rem;
 }
-p{
-    line-height: 1.5rem;
-    
+p {
+  line-height: 1.5rem;
 }
 .btn {
   background: rgb(234, 169, 88);
@@ -35,24 +34,17 @@ p{
   border: none;
 }
 .btn:hover {
-  background-color:#00abd9 ;
+  background-color: #00abd9;
   transition: 1ms;
 }
 /* navigation section css */
 #nav_wrap {
-    background: #07192d;
-    
-    
-}
-#nav_wrap .nav_content {
-  
-  
+  background: #07192d;
 }
 #nav_wriping {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 #nav_list_wrapper {
@@ -68,7 +60,6 @@ p{
   padding: 1rem;
   cursor: pointer;
   font-weight: bold;
-
 }
 #nav_list_wrapper .nav_list li a {
   text-decoration: none;
@@ -79,16 +70,16 @@ p{
 }
 
 /* header section */
-#header_wrapper{
-    background:url("https://autozone-theme.com/yachts/wp-content/uploads/bg45-2.jpg");
-    width: 100%;
-    height: 80vh;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+#header_wrapper {
+  background: url("https://autozone-theme.com/yachts/wp-content/uploads/bg45-2.jpg");
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
-#header_content{
+#header_content {
   width: 100%;
   line-height: 3.5rem;
   display: flex;
@@ -99,74 +90,169 @@ p{
   text-align: center;
   gap: 2rem;
 }
-#header_content h2{
-    color: #fff;
-   
+#header_content h2 {
+  color: #fff;
 }
 /* boat rental section css */
-#boat_rental_wrapper{
-    margin-top: 3rem;
-    background-color: #fff;
+#boat_rental_wrapper {
+  margin-top: 3rem;
+  background-color: #fff;
+  margin-bottom: 4rem;
 }
-.boat_rental{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   gap: 2rem;
-   padding: 1rem;   
+.boat_rental {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
 }
-.boat_rental_left h1{
- margin-bottom: 2rem;
+.boat_rental_left {
+  width: 50%;
 }
-.boat_rental_left img{
- margin-bottom: 2rem;
+.boat_rental_right {
+  width: 50%;
 }
-.boat_rental_right{
-    
+.boat_img {
+  width: 80%;
 }
-.rental_boat_card{
+.boat_rental_left h1 {
+  margin-bottom: 2rem;
+}
+.boat_rental_left img {
+  margin-bottom: 2rem;
+}
+.rental_boat_card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+.self_card {
+  text-align: center;
+  font-weight: bold;
+}
+/* featured section */
+#featured {
+  margin-top: 5rem;
+}
+.featured_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.featured_text p {
+  margin-top: 2rem;
+}
+.featured_card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 4rem;
+  grid-gap: 2rem;
+}
+.card {
+  background-color: #fff;
+}
+.featured_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.featured_text .rate {
+  color: #00abd9;
+  font-size: 1rem;
+}
+.featured_text .heading {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.featured_text button {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+/* footer added */
+#footer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #07192d;
+  color: #fff;
+  padding: 2rem;
+}
+
+@media (max-width: 600px) {
+  h1,
+  h2 {
+    font-size: 1rem;
+  }
+  p {
+    line-height: 2rem;
+  }
+  
+  #nav_wriping {
+    display: flex;
+    flex-direction: column;
+  }
+  #nav_list_wrapper .nav_list {
+    display: flex;
+    flex-direction: column;
+  }
+  #header_content {
+    line-height: 1.5rem;
+  }
+  .header_img{
+    width: 100%;
+  }
+  /* boat rental section */
+  .boat_rental {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    flex-direction: column;
+  }
+  img.boat_img {
+    width: 100%;
+}
+  .boat_rental_left {
+    width: 100%;
+    text-align: center;
+    text-justify: auto;
+  }
+  .boat_rental_right {
+    width: 100%;
+  }
+  .boat_img {
+    width: 80%;
+  }
+  .rental_boat_card {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 2rem;
     margin-top: 5rem;
     cursor: pointer;
-}
-.self_card{
+  }
+  .boat_rental_left  p{
+    line-height: 2rem;
+  }
+  /* featured */
+  .featured_text {
     text-align: center;
-    font-weight: bold;
-}
-/* featured section */
-#featured{
-    margin-top: 5rem;
-}
-.featured_text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.featured_text p{
-   margin-top: 2rem;
-}
-.featured_card{
+  }
+  .featured_card {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin-top: 4rem;
     grid-gap: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  #footer {
+   text-align: center;
+  }
+ 
 }
-.featured_text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.featured_text .rate{
- color: #00abd9;
- font-size: 1rem;
-}
-.featured_text .heading{
-    font-size: 2rem;
-    font-weight: 600;
-}
-.featured_text button{
-    margin-top: 2rem;
-}
+
