@@ -19,9 +19,11 @@ body{
 }
 h1,h2{
     font-size: 3rem;
+    margin-top: 2rem;
 }
 p{
     line-height: 1.5rem;
+    
 }
 .btn {
   background: rgb(234, 169, 88);
@@ -126,10 +128,45 @@ p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
     cursor: pointer;
 }
 .self_card{
     text-align: center;
     font-weight: bold;
+}
+/* featured section */
+#featured{
+    margin-top: 5rem;
+}
+.featured_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.featured_text p{
+   margin-top: 2rem;
+}
+.featured_card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 4rem;
+    grid-gap: 2rem;
+}
+.featured_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.featured_text .rate{
+ color: #00abd9;
+ font-size: 1rem;
+}
+.featured_text .heading{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.featured_text button{
+    margin-top: 2rem;
 }
