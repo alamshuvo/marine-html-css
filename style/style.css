@@ -6,6 +6,9 @@
   font-family: "Raleway", sans-serif;
 }
 /* shared css code  */
+body{
+    background-color: #eff6f8;
+}
 .container {
   max-width: 1280px;
   margin: 0px auto;
@@ -13,6 +16,12 @@
 .container_fluid{
     width: 100%;
 
+}
+h1,h2{
+    font-size: 3rem;
+}
+p{
+    line-height: 1.5rem;
 }
 .btn {
   background: rgb(234, 169, 88);
@@ -90,5 +99,37 @@
 }
 #header_content h2{
     color: #fff;
-    font-size: 3rem;
+   
+}
+/* boat rental section css */
+#boat_rental_wrapper{
+    margin-top: 3rem;
+    background-color: #fff;
+}
+.boat_rental{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 2rem;
+   padding: 1rem;   
+}
+.boat_rental_left h1{
+ margin-bottom: 2rem;
+}
+.boat_rental_left img{
+ margin-bottom: 2rem;
+}
+.boat_rental_right{
+    
+}
+.rental_boat_card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+.self_card{
+    text-align: center;
+    font-weight: bold;
 }
