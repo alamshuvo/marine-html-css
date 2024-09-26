@@ -7,7 +7,7 @@
 }
 /* shared css code  */
 body {
-  background-color: #eff6f8;
+
 }
 .container {
   max-width: 1280px;
@@ -25,7 +25,7 @@ p {
   line-height: 1.5rem;
 }
 .btn {
-  background: rgb(234, 169, 88);
+  background: #eaa958;
   text-align: center;
   padding: 0.9rem;
   color: #fff;
@@ -95,7 +95,7 @@ p {
 }
 /* boat rental section css */
 #boat_rental_wrapper {
-  margin-top: 3rem;
+  margin-top: 5rem;
   background-color: #fff;
   margin-bottom: 4rem;
 }
@@ -104,7 +104,7 @@ p {
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
-  padding: 2rem;
+  
 }
 .boat_rental_left {
   width: 50%;
@@ -135,6 +135,8 @@ p {
 /* featured section */
 #featured {
   margin-top: 5rem;
+  background-color: #eff6f8;
+  padding: 5rem;
 }
 .featured_text {
   display: flex;
@@ -271,6 +273,11 @@ width: 100%;
     line-height: 2rem;
   }
   /* featured */
+  #featured {
+    margin-top: 2rem;
+    background-color: #eff6f8;
+    padding: 1rem;
+  }
   .featured_text {
     text-align: center;
   }
